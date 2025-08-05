@@ -149,5 +149,16 @@ Regression Model:
 | Holidays around the corner? 🎉  |
 
 
+Best Models:
+
+Linear Regression – basic and interpretable
+
+Random Forest Regressor – can handle complex trends
+
+ARIMA / SARIMA – if your data is more time-series based
+
+LSTM (Neural Net) – if you collect enough data and wanna flex 
+
+
 
 
