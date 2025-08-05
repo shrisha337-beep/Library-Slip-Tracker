@@ -123,6 +123,20 @@ Looks 💯 in a portfolio if documented right
 | Limited analysis capabilities           | Fine-grained analysis of fines, delays, trends  |
 | Harder to integrate with data workflows | Built entirely with Pandas/NumPy = dev-friendly |
 
+What we're giving to the MLM(Input) and What are we expecting from it(Output):
+| **S. No.** | **Field Name**       | **Type**                      | **Input/Output** | **Description**                                                       |
+| ---------- | -------------------- | ----------------------------- | ---------------- | --------------------------------------------------------------------- |
+| 1          | Date                 | Date (YYYY-MM-DD)             | Input            | The date on which the slip check is being recorded                    |
+| 2          | Student Name         | String                        | Input            | Full name of the student                                              |
+| 3          | Roll Number          | String                        | Input            | Unique roll number assigned to student                                |
+| 4          | Slip Submitted       | Boolean / String ("Yes"/"No") | Input            | Whether the student submitted the slip or not                         |
+| 5          | Fine Amount          | Integer (₹)                   | Output           | Auto-calculated fine based on slip status (e.g., ₹2 if not submitted) |
+| 6          | Remarks              | String (Optional)             | Input            | Reason for not submitting the slip (if applicable)                    |
+| 7          | Total Fine Collected | Integer (₹)                   | Output           | Aggregated fine amount collected for a day/week/month                 |
+| 8          | Defaulter Count      | Integer                       | Output           | Number of students who didn’t submit slips                            |
+| 9          | Slip Submission Rate | Float (%)                     | Output           | Percentage of students who submitted slips on a particular date       |
+| 10         | Downloadable Report  | File (CSV/XLSX)               | Output           | Exported file with daily records                                      |
+
 
 
 
