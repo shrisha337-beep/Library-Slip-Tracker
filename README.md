@@ -138,5 +138,16 @@ What we're giving to the MLM(Input) and What are we expecting from it(Output):
 | 10         | Downloadable Report  | File (CSV/XLSX)               | Output           | Exported file with daily records                                      |
 
 
+Regression Model:
+
+| Features:                       |
+| ------------------------------- |
+| Date                            |
+| Number of expected students     |
+| Past fine collections           |
+| Time of year (midterms = chaos) |
+| Holidays around the corner? 🎉  |
+
+
 
 
