@@ -85,7 +85,7 @@ library-slip-tracker/
 ├── visuals/
 │   └── charts.png
 ├── README.md
-└── tracker.ipynb  ← Your Jupyter notebook for exploration
+└── tracker.ipynb  ← Google Colab for exploration
 📌 Ideas for Notebook Sections
 Intro & Dataset Description
 
