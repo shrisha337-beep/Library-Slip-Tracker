@@ -61,6 +61,12 @@ Top Books & Authors
 Monthly Borrowing Trends
 → Issue_Date to month, then use groupby() for stats
 
+🛠️ Tech Stack
+- **Language:** Python  
+- **Libraries:** Pandas, NumPy, Matplotlib / Seaborn (for visuals)  
+- **Optional UI:** Streamlit  
+- **Environment:** Google Colab / VS Code 
+
 🔥 Advanced/Fun Add-ons (Optional):
 “Blacklisted” Students → Who has racked up > ₹100 in fines?
 
@@ -86,6 +92,7 @@ library-slip-tracker/
 │   └── charts.png
 ├── README.md
 └── tracker.ipynb  ← Your Jupyter notebook for exploration
+
 📌 Ideas for Notebook Sections
 Intro & Dataset Description
 
@@ -104,6 +111,15 @@ Book Popularity
 Monthly Borrow Volume
 
 Bonus: Visualization & Export
+
+Example Outputs:
+Borrowing trend heatmap
+
+Fine distribution chart
+
+Late returner leaderboard
+
+Monthly borrowing report
 
 🤓 Why This Project Slaps
 Covers data cleaning, time logic, and groupby stats
@@ -136,6 +152,18 @@ What we're giving to the MLM(Input) and What are we expecting from it(Output):
 | 8          | Defaulter Count      | Integer                       | Output           | Number of students who didn’t submit slips                            |
 | 9          | Slip Submission Rate | Float (%)                     | Output           | Percentage of students who submitted slips on a particular date       |
 | 10         | Downloadable Report  | File (CSV/XLSX)               | Output           | Exported file with daily records                                      |
+
+💡 Future Enhancements
+Integration with Google Sheets for live updates.
+
+Email reminders for upcoming due dates.
+
+AI-based book recommendation system for readers.
+
+🛡️ License
+This project is licensed under the MIT License.
+
+
 
 
 
