@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import csv
 
 st.set_page_config(page_title="Library Slip Tracker", layout="wide")
 st.title("📚 Library Slip Tracker Dashboard")
@@ -10,7 +11,7 @@ st.write("An interactive ML/Data analytics app to monitor book borrowings, calcu
 @st.cache_data
 def load_data():
     # Reading your repository's CSV file
-    df = pd.read_csv("library_slip_tracker.csv")
+    df = pd.read_csv("library_slip_tracker.csv", quoting=csv.QUOTE_NONE, on_bad_lines='skip')
     # Convert date columns to datetime if they exist
     for col in ["Issue_Date", "Return_Date", "Due_Date", "Date"]:
         if col in df.columns:
